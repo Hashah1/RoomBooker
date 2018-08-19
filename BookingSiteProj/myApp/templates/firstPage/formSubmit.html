@@ -1,0 +1,37 @@
+{% extends "firstPage/header.html" %}
+
+{% block content %}
+
+ <!-- Introduction -->
+        <h1>Welcome to Magnolia's booking page </h1>
+        <p>Please enter your booking information:</p>
+        
+        <!-- Input will now be taken in respective fields -->
+        <form action = /Users/mianhashimshah/Desktop/action_page1.php method = "post">
+
+            First Name: <input type = "text" name = "firstName"> <br><br>
+            Last Name: <input type = "text" name = "lastName"> <br><br>
+            Phone Number: <input type = "text" name = "phoneNumber"> <br><br>
+            Email Address: <input type = "text" name = "Email"> <br><br>
+            
+            <!--Give a drop down of integers
+                So user can select the family size-->
+            Total number of people:             
+            <select name = "numberOfPeople"> 
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+             </select> <br><br>
+            
+             <!--Give the user option to select dates -->
+             Select your dates: <input type="date" name="VisitDate">
+             <br><br>
+
+
+            <!--Submit form-->
+            <input type = "submit" value = "Submit">
+        </form> 
+{% endblock %}
+
